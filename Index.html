@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Explorer</h1>
+        <p>Discover destinations, stunning photos, and real-time weather to plan your perfect trip.</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="destinationInput" placeholder="Enter a destination (e.g., Paris, Tokyo)" />
+            <button id="searchBtn">Explore</button>
+        </section>
+
+        <section id="results" class="results-section" style="display: none;">
+            <div class="weather-section">
+                <h2>Current Weather</h2>
+                <div id="weatherInfo">Loading weather...</div>
+            </div>
+            <div class="photos-section">
+                <h2>Stunning Photos</h2>
+                <div id="photoGallery" class="photo-grid">Loading photos...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel Explorer. Powered by Unsplash & OpenWeatherMap.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+</body>
+</html>
